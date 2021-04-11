@@ -1,0 +1,102 @@
+[{
+  "description": "Setup config"
+}, {
+  "description": "Enter parameters or set default pressing Enter"
+}, {
+  "description": "Git parameters",
+  "section": true
+}, {
+  "description": "Git user",
+  "name": "git-user"
+}, {
+  "description": "Git password",
+  "name": "git-pass"
+}, {
+  "description": "Select git URL protocol",
+  "name": "git-protocol",
+  "default": "https"
+}, {
+  "description": "Select git URL domain",
+  "name": "git-domain",
+  "default": "github.com"
+}, {
+  "description": "Git URL path like 'organization/repository'",
+  "name": "git-path"
+}, {
+  "description": "Git development (stage) branch",
+  "name": "git-dev-branch",
+  "default": "master"
+}, {
+  "description": "Git release (production) branch",
+  "name": "git-release-branch",
+  "default": "release"
+}, {
+  "description": "Site parameters",
+  "section": true
+}, {
+  "description": "The name of the site, such as 'site' or 'my-site'. For example, you have a real site 'real-site.com', then 'real-site'.",
+  "name": "site-name"
+}, {
+  "description": "Production site URL, such as 'https://real-site.com'",
+  "name": "prod-site-url"
+}, {
+  "description": "Stage/test site URL, such as 'https://test.real-site.com'",
+  "name": "test-site-url",
+  "skippable": true
+}, {
+  "description": "SSH parameters",
+  "section": true
+}, {
+  "description": "SSH production host, such as 'my-site-prod' from SSH config file or IP",
+  "name": "ssh-prod"
+}, {
+  "description": "SSH stage/test  host, such as 'my-site-test' from SSH config file or IP",
+  "name": "ssh-test",
+  "skippable": "test-site-url"
+}, {
+  "description": "Local DB credentials",
+  "section": true
+}, {
+  "description": "DB name",
+  "name": "loc-db-name",
+  "default": "wordpress"
+}, {
+  "description": "DB user",
+  "name": "loc-db-user",
+  "default": "wordpress"
+}, {
+  "description": "DB password",
+  "name": "loc-db-pass"
+}, {
+  "description": "Production DB credentials",
+  "section": true
+}, {
+  "description": "DB name",
+  "name": "prod-db-name",
+  "default": "wordpress"
+}, {
+  "description": "DB user",
+  "name": "prod-db-user",
+  "default": "wordpress"
+}, {
+  "description": "DB password",
+  "name": "prod-db-pass"
+}, {
+  "description": "Test DB credentials",
+  "section": true,
+  "skippable": "test-site-url"
+}, {
+  "description": "DB name",
+  "name": "test-db-name",
+  "default": "wordpress",
+  "skippable": "test-site-url"
+}, {
+  "description": "DB user",
+  "name": "test-db-user",
+  "default": "wordpress",
+  "skippable": "test-site-url"
+}, {
+  "description": "DB password",
+  "name": "test-db-pass",
+  "skippable": "test-site-url"
+}]
